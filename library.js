@@ -46,7 +46,7 @@ const library = {
 let newBooks = JSON.stringify(booklist);
 
 function receiveBooks(bookData) {
-    console.log(`Adding new books to our shelves`):
+    console.log(`Adding new books to our shelves`);
     const booksToAdd = JSON.parse(bookData);
     for (let book of booksToAdd) {
         library.addBook(book.title, book.author);
